@@ -25,8 +25,7 @@ makeCacheMatrix<- function(x = matrix())
 # Return a matrix that is the inverse of 'x' using cache 
 # it gets the solve from the cache and skips the computation
 cacheSolve <- function(x, ...) {
-      #x<-as.data.frame(x)
-      
+   
       m <- x$getsolve()
       if(!is.null(m)) {
             message("getting cached data")
